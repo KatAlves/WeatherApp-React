@@ -13,7 +13,7 @@ export default function Footer() {
       </a>
       <br />
       <a
-        href="https://github.com/KatAlves/WeatherApp.git"
+        href="https://github.com/KatAlves/WeatherApp-React"
         target="_blank"
         rel="noreferrer"
       >
