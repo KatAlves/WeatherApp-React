@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import 'bootstrap/dist/css/bootstrap.css';
 import Clock from "./Clock";
 import Form from "./Form";
 import Location from "./Location";
 import Temperature from "./Temperature";
 import Footer from "./Footer";
 
-function App() {
+export default function App() {
   return (
     <div class="container">
       <div className="weather-app">
@@ -30,4 +31,3 @@ function App() {
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 
-export default App;
