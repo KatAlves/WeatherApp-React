@@ -1,15 +1,33 @@
-import './App.css';
 import React from "react";
-import Weather from "./Weather";
+import ReactDOM from "react-dom";
+import Clock from "./Clock";
+import Form from "./Form";
+import Location from "./Location";
+import Temperature from "./Temperature";
+import Footer from "./Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       <Weather city="Lisbon"/>
-      </header>
+    <div class="container">
+      <div className="weather-app">
+        <Form />
+        <div className="row">
+          <div className="col-6">
+            <Location />
+          </div>
+          <div className="col-6">
+            <Clock />
+            <br />
+            <Temperature />
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
 
 export default App;
