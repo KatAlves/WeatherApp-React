@@ -1,14 +1,20 @@
 import React from "react";
 import "./Clock.css";
-import Weather from "./Weather";
 
 
-export default function Clock() {
+export default function Clock(props) {
+let weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+let day = weekDays[props.date.getDay()];
+let hours= props.date.getHours();
+if (hours < 10){hours=`0${hours}`};
+let minutes= props.date.getMinutes();
+if (minutes < 10){minutes=`0${minutes}`};
+
   return (
     <div className="Clock">
       <ul>
-        <li id="date">16 Jan 2021</li>
-        <li id="time">Sat 22:46h</li>
+        <li>{day}</li>
+        <li>{hours}:{minutes}</li>
       </ul>
     </div>
   );

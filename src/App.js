@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import 'bootstrap/dist/css/bootstrap.css';
-import Clock from "./Clock";
+import "bootstrap/dist/css/bootstrap.css";
 import Form from "./Form";
 import Location from "./Location";
 import Weather from "./Weather";
@@ -16,11 +15,9 @@ export default function App() {
           <div className="col-6">
             <Location />
           </div>
-        
-          
-            <br />
-            <Weather defaultCity= "Lisbon" />
-         
+
+          <br />
+          <Weather defaultCity="Lisbon" />
         </div>
       </div>
       <Footer />

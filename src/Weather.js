@@ -24,7 +24,7 @@ export default function Weather(props) {
   if (weather.ready) {
     return (
       <div className="Weather">
-        <Clock date={Weather.date}/>
+        <Clock date={weather.date}/>
         <ul>
           <li>
             <span id="description">{weather.description}</span>
