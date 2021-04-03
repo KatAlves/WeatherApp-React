@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Clock from "./Clock";
 import Form from "./Form";
 import Location from "./Location";
-import Temperature from "./Temperature";
+import Weather from "./Weather";
 import Footer from "./Footer";
 
 export default function App() {
@@ -16,11 +16,11 @@ export default function App() {
           <div className="col-6">
             <Location />
           </div>
-          <div className="col-6">
-            <Clock />
+        
+          
             <br />
-            <Temperature />
-          </div>
+            <Weather defaultCity= "Lisbon" />
+         
         </div>
       </div>
       <Footer />
@@ -30,4 +30,3 @@ export default function App() {
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-

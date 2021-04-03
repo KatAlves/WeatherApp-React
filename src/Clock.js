@@ -1,5 +1,7 @@
 import React from "react";
 import "./Clock.css";
+import Weather from "./Weather";
+
 
 export default function Clock() {
   return (
