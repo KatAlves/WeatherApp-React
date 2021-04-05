@@ -2,11 +2,12 @@ import React from "react";
 import "./Location.css";
 
 
-export default function Location() {
+
+export default function Location(props) {
   return (
     <div className="Location">
       <h1>
-        <span id="city">Lisbon</span>
+        <span id="city">{props.data.city}</span>
       </h1>
       <div className="col-12">
         <span className="country">PT</span>
@@ -29,7 +30,7 @@ export default function Location() {
         className="main-icon"
         id="icon"
       >
-        🌦{" "}
+        {props.data.icon}{" "}
       </span>
       <span className="phrase">
         Feels Like <span id="{feelsLike}">20</span>º with
