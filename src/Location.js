@@ -1,5 +1,6 @@
 import React from "react";
 import "./Location.css";
+import WeatherIcon from "./WeatherIcon";
 
 
 
@@ -10,7 +11,7 @@ export default function Location(props) {
         <span id="city">{props.data.city}</span>
       </h1>
       <div className="col-12">
-        <span className="country">PT</span>
+        <span className="country">{props.data.country}</span>
         <svg
           id="gpsButton"
           xmlns="http://www.w3.org/2000/svg"
@@ -30,11 +31,14 @@ export default function Location(props) {
         className="main-icon"
         id="icon"
       >
-        {props.data.icon}{" "}
+     
+        <WeatherIcon code={props.data.icon}
+        alt= {props.data.description}/>
+
       </span>
       <span className="phrase">
-        Feels Like <span id="{feelsLike}">20</span>º with
-        <span id="{descriptionLong}"> clouds</span>
+        Feels Like <span id="feelsLike">{props.data.feelsLike}</span>º with
+        <span id="descriptionLong"> {props.data.descriptionLong}</span>
       </span>
     </div>
   );

@@ -6,15 +6,15 @@ body {
 
 .container {
   font-family: "Source Sans Pro", sans-serif;
-  padding: 30px;
+  padding: 20px;
 }
 .weather-app {
   display: block;
   margin: 0 auto;
   border: solid 1px #68d5f3;
   border-radius: 15px;
-  max-width: 550px;
-  min-width: 450px;
+  max-width: 450px;
+  min-width: 300px;
   padding: 25px 25px 5px;
   background: linear-gradient(#5a558f 30%, #734d8b 100%);
   box-shadow: 5px 5px 4px #8d8f9148;
@@ -26,4 +26,23 @@ body {
   padding: 2px;
   margin: 2px auto;
   width: 80px;
+}
+
+.Button {
+  color: #f0f8fa;
+  font-size: 14px;
+  padding: 6px;
+  background: #3d4142;
+  border: 1px solid #3d4142;
+  border-radius: 10px 10px;
+  box-shadow: 5px 5px 4px #4b468a;
+  transition: all 200ms ease-in-out;
+}
+.Button:hover {
+  color: #3d4142;
+  background: transparent;
+  border: 1px solid #4b468a;
+}
+input #city-input {
+  height: 120px;
 }

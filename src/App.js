@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.css";
-import "./Form.css";
+import "./App.css";
 import Location from "./Location";
 import Weather from "./Weather";
 import Footer from "./Footer";
@@ -16,13 +16,16 @@ export default function App() {
       ready: true,
       city: response.data.name,
       temperature: Math.round(response.data.main.temp),
-      description: response.data.weather[0].description,
+      description: response.data.weather[0].main,
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       min: `${Math.round(response.data.main.temp_min)}↓ `,
       max: `${Math.round(response.data.main.temp_max)}↑`,
      date: new Date(response.data.dt*1000),
+     feelsLike: `${Math.round(response.data.main.feels_like)}`,
+    descriptionLong: response.data.weather[0].description,
+    country: response.data.sys.country
     })}
 
 function SearchCity(){
@@ -57,7 +60,7 @@ setCity(event.target.value);
           id="city-input"
          />
           
-          <input 
+          <input className="Button"
            type="submit" value="Go!" />
       </form>
     </div>
