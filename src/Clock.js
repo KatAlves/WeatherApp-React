@@ -1,5 +1,5 @@
 import React from "react";
-import "./Clock.css";
+import "./App.css";
 
 
 export default function Clock(props) {

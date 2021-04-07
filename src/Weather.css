@@ -15,11 +15,6 @@ div.temperature {
   color: #ffff;
   margin-left: 30px;
 }
-#temp-special {
-  margin-left: 8px;
-  width: 10px;
-  height: 10px;
-}
 
 #temp-special2 {
   font-size: 15px;
@@ -30,7 +25,7 @@ div.temperature {
   text-align: center;
 }
 
-.F-C {
+.units {
   font-size: 15px;
   text-align: center;
 }

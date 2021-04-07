@@ -8,10 +8,10 @@ import Footer from "./Footer";
 import axios from "axios";
 
 export default function App() {
-    const [weather, setWeather] = useState({ ready: false });
-    const [city, setCity] = useState("Lisbon");
+  const [weather, setWeather] = useState({ ready: false });
+  const [city, setCity] = useState("Lisbon");
 
- function handleResponse(response) {
+  function handleResponse(response) {
     setWeather({
       ready: true,
       city: response.data.name,
@@ -22,65 +22,64 @@ export default function App() {
       icon: response.data.weather[0].icon,
       min: `${Math.round(response.data.main.temp_min)}↓ `,
       max: `${Math.round(response.data.main.temp_max)}↑`,
-     date: new Date(response.data.dt*1000),
-     feelsLike: `${Math.round(response.data.main.feels_like)}`,
-    descriptionLong: response.data.weather[0].description,
-    country: response.data.sys.country
-    })}
-
-function SearchCity(){
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=5f472b7acba333cd8a035ea85a0d4d4c&units=metric`;
-axios.get(apiUrl).then(handleResponse);
-}
-
- function handleOnChange(event){   
-setCity(event.target.value);
- }
-
- function handleSubmit(event) {
-    event.preventDefault();
- SearchCity();
+      date: new Date(response.data.dt * 1000),
+      feelsLike: `${Math.round(response.data.main.feels_like)}`,
+      descriptionLong: response.data.weather[0].description,
+      country: response.data.sys.country,
+    });
   }
 
-   if (weather.ready) {
-  return (
- <div className="container">
-      <div className="weather-app">
-        <div className="row">
-          <div className="col-6">
+  function SearchCity() {
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=5f472b7acba333cd8a035ea85a0d4d4c&units=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
 
-    <div className="Form">
-    <form onSubmit={handleSubmit}>
-        <input
-          type="Search"
-          placeholder="Enter a city..."
-           onChange={handleOnChange}
-          autoComplete="off"
-          autoFocus={true}
-          id="city-input"
-         />
-          
-          <input className="Button"
-           type="submit" value="Go!" />
-      </form>
-    </div>
+  function handleOnChange(event) {
+    setCity(event.target.value);
+  }
 
-            <Location data={weather}/>
+  function handleSubmit(event) {
+    event.preventDefault();
+    SearchCity();
+  }
+
+  if (weather.ready) {
+    return (
+      <div className="container">
+        <div className="weather-app">
+          <div className="row">
+            <div className="col-xs-sm-6">
+              <div className="Form">
+                <form onSubmit={handleSubmit}>
+                  <input
+                    type="Search"
+                    placeholder="Enter a city..."
+                    onChange={handleOnChange}
+                    autoComplete="off"
+                    autoFocus={true}
+                    id="city-input"
+                  />
+
+                  <input className="Button" type="submit" value="Go!" />
+                </form>
+              </div>
+
+              <Location data={weather} />
+            </div>
+            <br />
+            <Weather data={weather} />
           </div>
-          <br />
-         <Weather data={weather} />
         </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
-  ) 
-    } else {
+    );
+  } else {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=5f472b7acba333cd8a035ea85a0d4d4c&units=metric`;
     axios.get(apiUrl).then(handleResponse);
     return "Loading...";
+    <Footer />;
   }
 }
-
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
