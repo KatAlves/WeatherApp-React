@@ -33,7 +33,8 @@ export default function Location(props) {
       >
      
         <WeatherIcon code={props.data.icon}
-        alt= {props.data.description}/>
+        alt= {props.data.description}
+        size= {53}/>
 
       </span>
       <span className="phrase">

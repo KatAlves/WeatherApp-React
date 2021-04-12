@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 import Location from "./Location";
 import Weather from "./Weather";
+import Forecast from "./Forecast";
 import Footer from "./Footer";
 import axios from "axios";
 
@@ -26,7 +27,11 @@ export default function App() {
       feelsLike: `${Math.round(response.data.main.feels_like)}`,
       descriptionLong: response.data.weather[0].description,
       country: response.data.sys.country,
+      coordinates: response.data.coord,
+      
     });
+    
+
   }
 
   function SearchCity() {
@@ -69,6 +74,7 @@ export default function App() {
             <br />
             <Weather data={weather} />
           </div>
+          <Forecast coordinates={weather.coordinates}/>
         </div>
         <Footer />
       </div>
