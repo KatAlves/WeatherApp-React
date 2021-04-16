@@ -27,6 +27,8 @@ setLoaded(false);
                 <ForecastDay data={dailyforecast} />
               </div>
             );
+          }else{
+            return null;
           }
         })}
       </div>
