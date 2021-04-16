@@ -15,14 +15,12 @@ return weekDay[day];
 
     return(
 <div className="ForecastDay">
-<div className= "row">
-<div className= "col">
+
 <div className= "Forecast-day">{day()}</div>
 <div className= "Forecast-icon"><WeatherIcon code={props.data.weather[0].icon} size= {32}/></div>
 <span className= "Forecast-max">{Math.round(props.data.temp.max)}º</span>
 <span className= "Forecast-min">{Math.round(props.data.temp.min)}º</span>
-</div>
-</div>   
+
 </div>);
 
 }
