@@ -1,7 +1,5 @@
 body {
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/004/513/original/164549.jpg?1611429126");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #fff6f6;
 }
 
 .container {
@@ -11,47 +9,39 @@ body {
 .weather-app {
   display: block;
   margin: 0 auto;
-  border: solid 1px #68d5f3;
+  border: solid 1px #aedefc;
   border-radius: 15px;
   max-width: 450px;
   min-width: 300px;
   padding: 25px 25px 5px;
-  background: linear-gradient(#5a558f 30%, #734d8b 100%);
+  background: linear-gradient(#aedefc 10%, #ffdfdf 100%);
   box-shadow: 5px 5px 4px #8d8f9148;
 }
 
-.col-2 {
-  background-color: #2e333627;
-  border-radius: 10px;
-  padding: 2px;
-  margin: 2px auto;
-  width: 80px;
-}
-
 .Button {
-  color: #f0f8fa;
+  color: #fb929e;
   font-size: 11px;
   padding: 6px;
   background: #3d4142;
   border: 1px solid #3d4142;
   border-radius: 10px 10px;
-  box-shadow: 5px 5px 4px #4b468a;
+  box-shadow: 5px 5px 4px #aedefc;
   transition: all 200ms ease-in-out;
 }
 .Button:hover {
   color: #3d4142;
   background: transparent;
-  border: 1px solid #4b468a;
+  border: 1px solid #fb929e;
 }
 input #city-input {
   height: 120px;
 }
 
 .Clock {
-  background-color: #2e333627;
+  background-color: #aedefc;
   font-weight: bolder;
   margin-left: 37px;
-  border: solid 1px #f0f8fa;
+  border: solid 1px #fb929e;
   border-radius: 10px;
   padding: 10px 10px;
   width: 160px;
@@ -63,13 +53,13 @@ a {
   line-height: 25px;
   font-weight: bold;
   text-decoration: none;
-  color: #734d8b;
+  color: #fb929e;
 }
 
 .footer,
 a:hover {
   text-decoration: underline;
-  color: #734d8b;
+  color: #fb929e;
 }
 div.Footer {
   text-align: center;

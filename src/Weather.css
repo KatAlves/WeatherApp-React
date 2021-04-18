@@ -7,12 +7,12 @@ li {
   text-align: center;
   font-size: 15px;
   list-style: none;
-  color: #68d5f3;
+  color: #464545;
 }
 
 div.temperature {
   font-size: 70px;
-  color: #ffff;
+  color: #fb929e;
   margin-left: 30px;
 }
 
@@ -21,7 +21,7 @@ div.temperature {
   width: 70px;
   height: 10px;
   margin: 0 auto;
-  color: #f0f8fa;
+  color: #fb929e;
   text-align: center;
 }
 
@@ -32,11 +32,22 @@ div.temperature {
 
 #celsius,
 #fahrenheit {
-  color: #f0f8fa;
+  color: #fb929e;
   text-decoration: none;
 }
 
 #thermometer-emoji {
   font-size: 15px;
   text-align: left;
+}
+
+.Forecast-max {
+  color: #968c83;
+}
+.Forecast-min {
+  color: #464545;
+}
+
+.Forecast-day {
+  color: #968c83;
 }

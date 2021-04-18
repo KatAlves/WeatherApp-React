@@ -21,8 +21,8 @@ export default function Weather(props) {
       </ul>
       <br />
       <div id="temp-special2">
-        <span id="currentMin">{props.data.min}</span>
         <span id="currentMax">{props.data.max}</span>
+           <span id="currentMin">{props.data.min}</span>
       </div>
       <div className="temperature">
         <Units celsius={props.data.temperature} />

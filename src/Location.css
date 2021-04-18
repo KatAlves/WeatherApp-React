@@ -1,5 +1,5 @@
 h1 {
-  color: #f0f8fa;
+  color: #464545;
   font-weight: 35;
   font-size: 60px;
   line-height: 70%;
@@ -9,17 +9,7 @@ h1 {
 span.country {
   font-size: 15px;
   margin-left: 5px;
-  color: #f0f8fa;
-}
-
-#gpsButton {
-  color: #000000;
-  transition: all 200ms ease-in-out;
-  width: 15px;
-}
-#gpsButton:hover {
-  color: #7595eb;
-  background: transparent;
+  color: #464545;
 }
 
 .main-icon {
@@ -30,7 +20,7 @@ span.country {
 
 .phrase {
   margin-left: 10px;
-  color: #f0f8fa;
+  color: #464545;
   font-weight: bold;
   font-size: 15px;
 }
