@@ -77,7 +77,9 @@ export default function App() {
           <Forecast coordinates={weather.coordinates}/>
         </div>
         <Footer />
+      
       </div>
+     
     );
   } else {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=5f472b7acba333cd8a035ea85a0d4d4c&units=metric`;

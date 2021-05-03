@@ -1,50 +1,53 @@
 body {
-  background-color: #fff6f6;
+  background-image: url("https://wallpapercave.com/wp/wp6874118.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
   font-family: "Source Sans Pro", sans-serif;
-  padding: 20px;
+  padding: 30px;
 }
 .weather-app {
   display: block;
   margin: 0 auto;
-  border: solid 1px #aedefc;
   border-radius: 15px;
   max-width: 450px;
   min-width: 300px;
-  padding: 25px 25px 5px;
-  background: linear-gradient(#aedefc 10%, #ffdfdf 100%);
-  box-shadow: 5px 5px 4px #8d8f9148;
+  padding: 20px 30px 20px 20px;
+  background: linear-gradient(#3e85a8 10%, #99ecdf 100%);
+  box-shadow: 5px 13px 25px 2px rgba(0, 0, 0, 0.2);
 }
 
 .Button {
-  color: #fb929e;
+  color: #fefdfc;
   font-size: 11px;
-  padding: 6px;
-  background: #3d4142;
+  padding: 5px;
+  background: #28292b48;
   border: 1px solid #3d4142;
   border-radius: 10px 10px;
-  box-shadow: 5px 5px 4px #aedefc;
+  box-shadow: 5px 2px 5px 2px rgba(0, 0, 0, 0.096);
   transition: all 200ms ease-in-out;
+  position: relative;
+  top: -2px;
+  left: 2px;
 }
 .Button:hover {
   color: #3d4142;
   background: transparent;
-  border: 1px solid #fb929e;
 }
 input #city-input {
   height: 120px;
 }
 
 .Clock {
-  background-color: #aedefc;
+  background-color: #aedefc48;
   font-weight: bolder;
-  margin-left: 37px;
-  border: solid 1px #fb929e;
+  margin-left: 25px;
+  border: solid 3px #e8efef;
   border-radius: 10px;
-  padding: 10px 10px;
-  width: 160px;
+  padding: 7px 5px;
+  width: 140px;
 }
 
 .footer,
@@ -53,14 +56,24 @@ a {
   line-height: 25px;
   font-weight: bold;
   text-decoration: none;
-  color: #fb929e;
+  color: #ffff;
 }
 
 .footer,
 a:hover {
   text-decoration: underline;
-  color: #fb929e;
+  color: #aedefc48;
 }
 div.Footer {
   text-align: center;
+}
+.row {
+  margin-left: 0;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+div.col {
+  text-align: center;
+  padding-left: 0;
 }

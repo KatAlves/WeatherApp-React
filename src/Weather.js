@@ -7,19 +7,18 @@ export default function Weather(props) {
   return (
     <div className="Weather">
       <Clock date={props.data.date} />
+<br />
 
       <ul>
+      
         <li>
-          <span id="description">{props.data.description}</span>
+           <span id="humidity">Humidity: {props.data.humidity}</span>%
         </li>
         <li>
-          Humidity: <span id="humidity">{props.data.humidity}</span>%
-        </li>
-        <li>
-          Wind: <span id="wind">{props.data.wind}</span> km/h
+         <span id="wind"> Wind: {props.data.wind}</span> km/h
         </li>
       </ul>
-      <br />
+      
       <div id="temp-special2">
         <span id="currentMax">{props.data.max}</span>
            <span id="currentMin">{props.data.min}</span>

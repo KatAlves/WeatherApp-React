@@ -1,5 +1,5 @@
 h1 {
-  color: #464545;
+  color: #e8efef;
   font-weight: 35;
   font-size: 60px;
   line-height: 70%;
@@ -9,7 +9,7 @@ h1 {
 span.country {
   font-size: 15px;
   margin-left: 5px;
-  color: #464545;
+  color: #e8efef;
 }
 
 .main-icon {
@@ -20,7 +20,7 @@ span.country {
 
 .phrase {
   margin-left: 10px;
-  color: #464545;
+  color: #e8efef;
   font-weight: bold;
   font-size: 15px;
 }

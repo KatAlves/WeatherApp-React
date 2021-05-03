@@ -7,21 +7,26 @@ li {
   text-align: center;
   font-size: 15px;
   list-style: none;
-  color: #464545;
+  color: #e8efef;
+}
+#description,
+#humidity,
+#wind {
+  margin-left: 10px;
 }
 
 div.temperature {
-  font-size: 70px;
-  color: #fb929e;
-  margin-left: 30px;
+  font-size: 60px;
+  color: #e8efef;
+  margin-left: 12px;
 }
 
 #temp-special2 {
   font-size: 15px;
-  width: 70px;
+  width: 50px;
   height: 10px;
   margin: 0 auto;
-  color: #fb929e;
+  color: #e8efef;
   text-align: center;
 }
 
@@ -32,7 +37,7 @@ div.temperature {
 
 #celsius,
 #fahrenheit {
-  color: #fb929e;
+  color: #e8efef;
   text-decoration: none;
 }
 
@@ -41,13 +46,10 @@ div.temperature {
   text-align: left;
 }
 
-.Forecast-max {
-  color: #968c83;
+.Forecast-max,
+.Forecast-day {
+  color: #8d8d8d;
 }
 .Forecast-min {
-  color: #464545;
-}
-
-.Forecast-day {
-  color: #968c83;
+  color: #ffff;
 }

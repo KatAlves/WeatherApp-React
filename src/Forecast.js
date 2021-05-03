@@ -21,7 +21,7 @@ setLoaded(false);
     return (
       <div className="row">
         {forecast.map(function (dailyforecast, index) {
-          if (index < 5) {
+          if (index < 6) {
             return (
               <div className="col" key={index}>
                 <ForecastDay data={dailyforecast} />
